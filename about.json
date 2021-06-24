@@ -1,6 +1,6 @@
 {
-  "about_url": null,
-  "license_url": null,
+  "about_url": "https://github.com/orhun-kolgeli/demo-theme/blob/main/README.md",
+  "license_url": "https://github.com/orhun-kolgeli/demo-theme/blob/main/LICENSE",
   "assets": {
   },
   "name": "demo-theme",
