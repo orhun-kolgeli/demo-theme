@@ -1,1 +1,1 @@
-Demo theme for local Discourse instance
+# Demo theme for local Discourse instance
