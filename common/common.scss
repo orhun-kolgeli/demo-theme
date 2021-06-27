@@ -64,6 +64,9 @@
 .topic-list {
   width: 100%;
   .topic-list-item {
+    .visited {
+      color: var(--primary)
+    }
     float: left;
     width: 33%;
     height: 33vh;
@@ -72,5 +75,5 @@
 }
 
 body {
-  background-color: linear-gradient(var(--secondary), var(--primary));
+  background: linear-gradient(90deg, var(--secondary), var(--highlight));
 }

@@ -4,17 +4,5 @@
   "assets": {},
   "name": "demo-theme",
   "color_schemes": {
-    "Default": {
-      "primary": "203243",
-      "secondary": "FFFFFF",
-      "tertiary": "416376",
-      "quaternary": "5E99B9",
-      "header_background": "FaFaFa",
-      "header_primary": "EEF4F7",
-      "highlight": "86BDDB",
-      "danger": "8F393E",
-      "success": "70DB82",
-      "love": "FC94CB"
-    }
   } 
 }
