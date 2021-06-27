@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .hello-world-container {
     background-color: var(--quaternary);
 }
@@ -52,4 +55,22 @@
         border-radius: 15px;
         padding: 5px;
     }
+}
+
+.posts, .default, .activity, .views {
+  display: none;
+}
+
+.topic-list {
+  width: 100%;
+  .topic-list-item {
+    float: left;
+    width: 33%;
+    height: 33vh;
+    border-radius: 20px;
+  }
+}
+
+body {
+  background-color: linear-gradient(var(--secondary), var(--primary));
 }
