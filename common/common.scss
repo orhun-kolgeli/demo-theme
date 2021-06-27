@@ -49,9 +49,8 @@
 }
 
 .d-header {
-    background-color: var(--quaternary);
     .panel {
-        background-color: var(--secondary);
+        background-color: white;
         border-radius: 15px;
         padding: 5px;
     }
@@ -64,16 +63,15 @@
 .topic-list {
   width: 100%;
   .topic-list-item {
-    .visited {
-      color: var(--primary)
-    }
     float: left;
     width: 33%;
-    height: 33vh;
-    border-radius: 20px;
+    height: 300px;
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 }
 
 body {
-  background: linear-gradient(90deg, var(--secondary), var(--highlight));
+  background-color:  #e9fdf5;
 }
