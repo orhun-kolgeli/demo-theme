@@ -50,7 +50,7 @@
 
 .d-header {
     .panel {
-        background-color: white;
+        background-color: var(--quaternary);
         border-radius: 15px;
         padding: 5px;
     }
@@ -65,13 +65,14 @@
   .topic-list-item {
     float: left;
     width: 33%;
-    height: 300px;
+    height: 150px;
     &:hover {
-      transform: scale(1.03);
+      transition: transform 1s;
+      transform: translateX(10px);
     }
   }
 }
 
 body {
-  background-color:  #e9fdf5;
+
 }
