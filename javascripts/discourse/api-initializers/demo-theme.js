@@ -1,11 +1,12 @@
 import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("0.11.1", api => {
-  console.log("hello world from api initializer!");
+  
+  $( document ).ready(function() {
+    const user = api.getCurrentUser();
+    $('h1.hello-world').html("Hello " + user.name + "!");
+  });
 
-  const currentUser = api.getCurrentUser();
-
-  alert("Welcome back, " + currentUser.name + "!")
 });
 
 

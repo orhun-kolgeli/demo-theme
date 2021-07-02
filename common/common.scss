@@ -67,12 +67,16 @@
     width: 33%;
     height: 150px;
     &:hover {
-      transition: transform 1s;
+      transition: transform .75s;
       transform: translateX(10px);
     }
   }
 }
 
-body {
+.nav-pills > li > a {
+  transition: background .75s;
+}
 
+.btn {
+  transition: all .75s;
 }
