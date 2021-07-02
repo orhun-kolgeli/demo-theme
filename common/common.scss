@@ -56,16 +56,18 @@
     }
 }
 
-.posts, .default, .activity, .views {
+.default, .posts {
   display: none;
 }
+
 
 .topic-list {
   width: 100%;
   .topic-list-item {
     float: left;
-    width: 33%;
-    height: 150px;
+    width: 33.3%;
+    height: 200px;
+    display: flex;
     &:hover {
       transition: transform .75s;
       transform: translateX(5px);
