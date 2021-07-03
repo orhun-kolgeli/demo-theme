@@ -1,52 +1,16 @@
+
 * {
   box-sizing: border-box;
 }
-.hello-world-container {
-    background-color: var(--quaternary);
-}
+
 
 .d-header {
     box-shadow: none;
-    border-bottom: 1px solid var(--primary-low-mid);
     height: 5em;
     .d-icon {
         color: var(--primary-low-mid);
       }
   }
-
-  .navigation-container {
-    .select-kit.combo-box {
-      .select-kit-header {
-        border-radius: .9em;
-        background-color: var(--header_background);
-      }
-    }
-  }
-
-  .navigation-container {
-	.select-kit.combo-box {
-		.select-kit-header {
-            border-radius: .9em;
-            background-color: var(--header_background);
-          }
-		&.category-drop,
-    &.tag-drop {
-      .select-kit-body {
-        .select-kit-filter {
-            border-top: 0px;
-          }
-        border-radius: .9em;
-        background-color: var(--header_background);
-  
-        .select-kit-collection {
-          background-color: var(--header_background);
-          border-top-left-radius: 0px;
-          border-top-right-radius: 0px;
-        }
-      }
-    }
-  }
-}
 
 .d-header {
     .panel {
@@ -56,7 +20,7 @@
     }
 }
 
-.default, .posts {
+.default, .posts, .views, .activity {
   display: none;
 }
 
@@ -66,8 +30,7 @@
   .topic-list-item {
     float: left;
     width: 33.3%;
-    height: 200px;
-    display: flex;
+    height: 150px;
     &:hover {
       transition: transform .75s;
       transform: translateX(5px);
@@ -82,3 +45,8 @@
 .btn {
   transition: all .75s;
 }
+
+body.dark {
+  background-color: black;
+}
+
