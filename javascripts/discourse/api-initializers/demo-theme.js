@@ -2,12 +2,13 @@ import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("0.11.1", api => {
   
-  $( document ).ready(function() {
-    const user = api.getCurrentUser();
-    $('h1.hello-world').html("You have " 
-    + user.unread_notifications + " unread notifications, and "
-    + user.unread_private_messages + " unread private messages");
-  });
+  //$( document ).ready(function() {
+  //  const user = api.getCurrentUser();
+  //  $('h1.hello-world').html("You have " 
+  //  + user.unread_notifications + " unread notifications, and "
+  //  + user.unread_private_messages + " unread private messages");
+  //});
+  
 
   api.addNavigationBarItem({
     name: "link-to-movies-category",
