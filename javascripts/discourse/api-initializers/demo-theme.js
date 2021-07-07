@@ -9,7 +9,7 @@ export default apiInitializer("0.11.1", api => {
   //  + user.unread_private_messages + " unread private messages");
   //});
   
-
+  /**
   api.addNavigationBarItem({
     name: "link-to-movies-category",
     displayName: "movies",
@@ -41,6 +41,8 @@ export default apiInitializer("0.11.1", api => {
     icon: 'info',
     href: 'https://www.discourse.org/about'
   });
+  
+  */
 
 });
 

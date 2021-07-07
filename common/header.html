@@ -1,9 +1,66 @@
-    <p style="position: relative; top: 40px;" id="demo">CLICK ME</p>
+<p id="default-theme">
+    Light
+</p>
+<p id="dark-theme">
+    Night Mode
+</p>
+<p id="blue-theme">
+    Shades of Blue
+</p>
+<p id="latte-theme">
+    Latté
+</p>
     
-    <script>
-    document.getElementById("demo").addEventListener("click", myFunction);
-    
-    function myFunction() {
-        document.body.style.backgroundColor = "yellow";
-    }
-    </script>
+<script>
+
+    parameters = [ 
+        "primary",
+      "secondary",
+      "tertiary",
+      "quaternary",
+      "header_background",
+      "header_primary"];
+
+      default_theme = [
+      "222222",
+      "ffffff",
+      "0088cc",
+      "e45735",
+      "ffffff",
+      "333333"];
+
+    dark_theme = [
+        "dddddd", 
+    "222222", 
+    "0f82af", 
+    "c14924", 
+    "111111", 
+    "dddddd"];
+
+    blue_theme = [
+        "203243", 
+    "eef4f7", 
+    "416376", 
+    "5e99b9", 
+    "86bddb", 
+    "203243"];
+
+    latte_theme = [
+        "f2e5d7", 
+    "262322", 
+    "f7f2ed", 
+    "d7c9aa", 
+    "d7c9aa", 
+    "262322"];
+
+    document.getElementById("default-theme").addEventListener("click", function(){themeSwitcher(default_theme)});
+    document.getElementById("dark-theme").addEventListener("click", function(){themeSwitcher(dark_theme)});
+    document.getElementById("blue-theme").addEventListener("click", function(){themeSwitcher(blue_theme)});
+    document.getElementById("latte-theme").addEventListener("click", function(){themeSwitcher(latte_theme)});
+
+    function themeSwitcher(theme) {
+        for (let i = 0; i < parameters.length; i++) {
+            document.documentElement.style.setProperty('--' + parameters[i], '#' + theme[i]);
+        };
+    };
+</script>

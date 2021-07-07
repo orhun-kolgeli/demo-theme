@@ -1,3 +1,12 @@
+:root {
+  --primary: #222222;
+  --secondary: #ffffff;
+  --tertiary: #0088cc;
+  --quaternary: #e45735;
+  --header-background: #ffffff;
+  --header-primary: #333333;
+
+}
 
 * {
   box-sizing: border-box;
@@ -7,9 +16,6 @@
 .d-header {
     box-shadow: none;
     height: 5em;
-    .d-icon {
-        color: var(--primary-low-mid);
-      }
   }
 
 .d-header {
@@ -44,4 +50,50 @@
 
 .btn {
   transition: all .75s;
+  background-color: var(--secondary);
 }
+
+
+// Start of toggle switch styles
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 40px;
+	height: 20px;
+	background: grey;
+	display: block;
+	border-radius: 20px;
+	position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 18px;
+    transition: 0.3s;
+  }
+}
+
+input:checked + label {
+	background: var(--quaternary);
+}
+
+input:checked + label:after {
+	left: calc(100% - 1px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 26px;
+}
+
+// Eng of toggle switch styles
