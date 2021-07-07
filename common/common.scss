@@ -54,46 +54,23 @@
 }
 
 
-// Start of toggle switch styles
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
+#switcher-container {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 20px);
+  max-width: 1110px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 10px;
 }
 
-label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 40px;
-	height: 20px;
-	background: grey;
-	display: block;
-	border-radius: 20px;
-	position: relative;
-  &:after {
-    content: '';
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    width: 18px;
-    height: 18px;
-    background: #fff;
-    border-radius: 18px;
-    transition: 0.3s;
+.themes {
+  padding: 6px 10px;
+  border-radius: 15px;
+  transition: background .75s;
+  background-color: transparent;
+  &:hover {
+    background-color: var(--quaternary);
   }
 }
 
-input:checked + label {
-	background: var(--quaternary);
-}
-
-input:checked + label:after {
-	left: calc(100% - 1px);
-	transform: translateX(-100%);
-}
-
-label:active:after {
-	width: 26px;
-}
-
-// Eng of toggle switch styles

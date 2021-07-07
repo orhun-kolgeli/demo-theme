@@ -1,15 +1,20 @@
-<p id="default-theme">
+<div id="switcher-container">
+<p class="themes" id="default-theme">
     Light
 </p>
-<p id="dark-theme">
+<p class="themes" id="dark-theme">
     Night Mode
 </p>
-<p id="blue-theme">
+<p class="themes" id="blue-theme">
     Shades of Blue
 </p>
-<p id="latte-theme">
+<p class="themes" id="latte-theme">
     Latté
 </p>
+<p class="themes" id="summer-theme">
+    Summer
+</p>
+</div>
     
 <script>
 
@@ -53,14 +58,43 @@
     "d7c9aa", 
     "262322"];
 
-    document.getElementById("default-theme").addEventListener("click", function(){themeSwitcher(default_theme)});
-    document.getElementById("dark-theme").addEventListener("click", function(){themeSwitcher(dark_theme)});
-    document.getElementById("blue-theme").addEventListener("click", function(){themeSwitcher(blue_theme)});
-    document.getElementById("latte-theme").addEventListener("click", function(){themeSwitcher(latte_theme)});
+    summer_theme = [
+        "874342", 
+    "fffff4", 
+    "fe9896", 
+    "fcc9d0", 
+    "96ccbf", 
+    "fff1e7"];
 
-    function themeSwitcher(theme) {
+    summer_theme = [
+        "874342", 
+    "fffff4", 
+    "fe9896", 
+    "fcc9d0", 
+    "96ccbf", 
+    "fff1e7"];
+
+
+
+    document.getElementById("default-theme").addEventListener("click", function(){themeSwitcher(default_theme, "default-theme")});
+    document.getElementById("dark-theme").addEventListener("click", function(){themeSwitcher(dark_theme, "dark-theme")});
+    document.getElementById("blue-theme").addEventListener("click", function(){themeSwitcher(blue_theme, "blue-theme")});
+    document.getElementById("latte-theme").addEventListener("click", function(){themeSwitcher(latte_theme, "latte-theme")});
+    document.getElementById("summer-theme").addEventListener("click", function(){themeSwitcher(summer_theme, "summer-theme")});
+
+    function themeSwitcher(theme, id) {
         for (let i = 0; i < parameters.length; i++) {
             document.documentElement.style.setProperty('--' + parameters[i], '#' + theme[i]);
         };
+
+        elems = document.getElementsByClassName("themes")
+        for (let i = 0; i < elems.length; i++) {
+            elems[i].style.backgroundColor = "transparent";
+            if (elems[i].id == id) {
+                elems[i].style.backgroundColor = "var(--quaternary)";
+            }
+        }
+        
+
     };
 </script>
