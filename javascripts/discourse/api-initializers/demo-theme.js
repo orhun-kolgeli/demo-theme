@@ -44,6 +44,9 @@ export default apiInitializer("0.11.1", api => {
   
   */
 
+  // note: this implementation of theme switcher does not work when
+  // put in demo-theme.js
+
 });
 
 
