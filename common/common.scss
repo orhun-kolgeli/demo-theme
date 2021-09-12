@@ -56,3 +56,21 @@
     background-color: var(--quaternary);
   }
 }
+
+.default, .posts, .views, .activity {
+   display: none;
+ }
+
+
+ .topic-list {
+   width: 100%;
+   .topic-list-item {
+     float: left;
+     width: 33.3%;
+     height: 150px;
+     &:hover {
+       transition: transform .75s;
+       transform: translateX(5px);
+     }
+   }
+ }
