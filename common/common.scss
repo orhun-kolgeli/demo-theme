@@ -50,6 +50,7 @@
 .themes {
   padding: 6px 10px;
   border-radius: 15px;
+  border: solid var(--quaternary);
   transition: background .75s;
   background-color: transparent;
   &:hover {
