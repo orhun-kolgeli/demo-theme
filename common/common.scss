@@ -49,8 +49,8 @@
 
 .themes {
   padding: 6px 10px;
-  border-radius: 15px;
-  border: solid var(--quaternary);
+  border-radius: 25px;
+  border: solid var(--quaternary) 10px;
   transition: background .75s;
   background-color: transparent;
   &:hover {
