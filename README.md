@@ -8,4 +8,4 @@ Follow [How do I install a Theme or Theme Component?](https://meta.discourse.org
 
 Usage
 
-TODO
+![Usage](https://github.com/orhun-kolgeli/theme-switcher/blob/main/usage.gif)
